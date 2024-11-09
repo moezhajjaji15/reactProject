@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+  }
+  .gradient-purple-blue {
+    background-image: linear-gradient(30deg, #8E78FF, #B9DEDB);
+  }
+  .under-container {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    transition: opacity 0.5s;
+    z-index: 1;
+  }
+  .menu li {
+    padding: 30px;
+    list-style: none;
+    position: relative;
+    bottom: 352px;
+  }
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+  }
+  .line {
+    z-index: 3;
+    width: 1100px;
+    background-color: rgba(255, 255, 255, 0.299); /* Transparent background */
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ff0000; /* Error message color */
+  }
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333; /* Darker text for contrast */
+  }
+  input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.573);
+  } 
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  } 
+  button:hover {
+    background-color: #45a049;
+  } 
+  .notes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  .notes-table th,
+  .notes-table td {
+    border: 1px solid #dddddd;
+    text-align: center; /* Centering the text */
+    padding: 8px;
+  }
+  .notes-table th {
+    background-color: rgba(255, 255, 255, 0.349);
+    color: rgb(27, 54, 234);
+  }
+ .transparent-frame {
+  background-color: rgba(255, 255, 255, 0.378); /* Couleur de fond avec transparence */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+.transparent-frame textarea {
+  min-height: 150px; /* Hauteur minimale du champ de message */
+  width: 95%; /* Largeur à 100% */
+  padding: 10px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de police */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 5px; /* Coins arrondis pour la bordure */
+  resize: vertical; /* Permettre le redimensionnement vertical uniquement */
+  background-color: rgba(255, 255, 255, 0.349);
+}

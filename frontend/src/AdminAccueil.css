@@ -1,0 +1,138 @@
+/* src/EtudiantAccueil.css */
+
+body {
+  font-family: 'Quicksand';
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.intro-section {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.423);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 240px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  text-align: left; /* Alignement du texte à gauche */
+  color: #2f06fbeb; /* Couleur de texte blanche */
+
+  z-index: 3;
+  line-height: 1.6; /* Augmenter l'espace entre les lignes */
+}
+
+.gradient-purple-blue {
+  background-image: linear-gradient(30deg, #8E78FF, #B9DEDB);
+}
+
+.menu {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+.menu li {
+  padding: 30px;
+  list-style: none;
+  position: relative;
+  bottom: 352px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.under-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.bubble::before, .bubble::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 25vw;
+  height: 25vw;
+  min-height: 200px;
+  min-width: 200px;
+  background: linear-gradient(270deg, #43e97b, #38f9d7, #e0c3fc, #8ec5fc, #4facfe, #00f2fe, #a8edea, #fed6e3);
+  background-size: 1600% 1600%;
+  box-shadow: inset 0px -20px 100px 0px rgba(255, 255, 255, 0.48);
+  animation: transform 20s linear infinite alternate, movement 40s linear infinite alternate, shade 60s linear infinite alternate;
+}
+
+.bubble::after {
+  width: 15vw;
+  height: 10vw;
+}
+
+.logout-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #08FDD8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #06CFA1;
+}
+.mouse {
+  display: flex;
+  width: 30px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+.molette {
+  margin: 12px auto auto auto;
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 90px;
+  animation: scroll 2s ease infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; margin: 10px auto auto auto; }
+  10% { opacity: 1; }
+  50% { margin: 10px auto auto auto; }
+  90% { opacity: 1; }
+  100% { opacity: 0; margin: 18px auto auto auto; }
+}
+.rubberBand {
+  animation-name: rubberBand;
+}
+@keyframes rubberBand {
+  0% { transform: scale3d(1, 1, 1); }
+  30% { transform: scale3d(1.25, .75, 1); }
+  40% { transform: scale3d(0.75, 1.25, 1); }
+  50% { transform: scale3d(1.15, .85, 1); }
+  65% { transform: scale3d(.95, 1.05, 1); }
+  75% { transform: scale3d(1.05, .95, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}

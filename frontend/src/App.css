@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+header, footer {
+  width: 100%;
+}
+footer {
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  position: relative; /* Changed from fixed to relative */
+  bottom: 0;
+}
